@@ -1,0 +1,32 @@
+{
+  "name": "ionic2-module-template",
+  "version": "0.0.1",
+  "description": "A template for creating reusable module for Angular 2 and Ionic 2",
+  "main": "dist/es5/index.js",
+  "module": "dist/esm/index.js",
+  "typings": "dist/es5/index.d.ts",
+  "scripts": {
+    "tsc": "tsc",
+    "build": "npm run tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/driftyco/ionic-module-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/driftyco/ionic-module-template/issues"
+  },
+  "homepage": "https://github.com/driftyco/ionic-module-template#readme",
+  "dependencies": {
+    "@angular/core": "^2.1.1",
+    "rxjs": ">=5.0.0-beta.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^3.4.34",
+    "@types/node": "^6.0.41",
+    "typescript": "^2.0.3"
+  }
+}
