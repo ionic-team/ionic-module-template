@@ -2,9 +2,9 @@
   "name": "ionic2-module-template",
   "version": "0.0.1",
   "description": "A template for creating reusable module for Angular 2 and Ionic 2",
-  "main": "dist/es5/index.js",
-  "module": "dist/esm/index.js",
-  "typings": "dist/es5/index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
     "tsc": "tsc",
     "build": "npm run tsc"
