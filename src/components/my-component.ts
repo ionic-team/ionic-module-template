@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  template: `<div>I'm a special snowflake</div>`,
-  host: {
-    'style.backgroundColor': 'red'
-  }
+  selector: 'my-component',
+  template: `<div>I'm a special snowflake</div>`
 })
 export class MyComponent {
   constructor() {}
