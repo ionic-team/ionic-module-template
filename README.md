@@ -1,12 +1,34 @@
-[![npm](https://img.shields.io/npm/v/@ionic/cloud-angular.svg?maxAge=2592000)](https://www.npmjs.com/package/@ionic/cloud-angular)
+# Ionic2 Module Template
 
-# Ionic Cloud Client for Angular 2
+This is a template for building your own reusable Angular2/Ionic2 module using TypeScript.
 
-Angular 2 integration for the [Ionic Cloud
-Client](https://github.com/driftyco/ionic-cloud). Check out [our
-documentation](http://docs.ionic.io/).
+## Using your module in an Ionic 2 app
 
-## Issues & Local Development
+```typescript
+import { NgModule } from '@angular/core';
+import { IonicApp, IonicModule } from 'ionic-angular';
+import { MyApp } from './app.component';
+import { HomePage } from '../pages/home/home';
 
-See the [`CONTRIBUTING.md`
-file](https://github.com/driftyco/ionic-cloud-angular/blob/master/CONTRIBUTING.md).
+// Import your module
+import { MyModule } from 'ionic2-module-template';
+
+@NgModule({
+  declarations: [
+    MyApp,
+    HomePage
+  ],
+  imports: [
+    IonicModule.forRoot(MyApp),
+
+    MyModule // Put your module here
+  ],
+  bootstrap: [IonicApp],
+  entryComponents: [
+    MyApp,
+    HomePage
+  ],
+  providers: []
+})
+export class AppModule {}
+```
