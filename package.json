@@ -1,13 +1,14 @@
 {
   "name": "ionic2-module-template",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "A template for creating reusable module for Angular 2 and Ionic 2",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
     "tsc": "tsc",
-    "build": "npm run tsc"
+    "build": "npm run tsc && node ./scripts/copy-package",
+    "publishPackage": "npm run build && cd dist && npm publish"
   },
   "repository": {
     "type": "git",
