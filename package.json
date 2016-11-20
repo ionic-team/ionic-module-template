@@ -1,13 +1,13 @@
 {
   "name": "ionic2-module-template",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A template for creating reusable module for Angular 2 and Ionic 2",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
-    "tsc": "tsc",
-    "build": "npm run tsc && node ./scripts/copy-package",
+    "ngc": "ngc",
+    "build": "npm run ngc && node ./scripts/copy-package",
     "publishPackage": "npm run build && cd dist && npm publish"
   },
   "repository": {
@@ -22,9 +22,11 @@
   },
   "homepage": "https://github.com/driftyco/ionic-module-template#readme",
   "dependencies": {
-    "@angular/core": "^2.1.1",
-    "@angular/common": "^2.1.1",
-    "@angular/platform-browser": "^2.1.1",
+    "@angular/core": "^2.2.1",
+    "@angular/common": "^2.2.1",
+    "@angular/compiler": "^2.2.1",
+    "@angular/compiler-cli": "^2.2.1",
+    "@angular/platform-browser": "^2.2.1",
     "rxjs": ">=5.0.0-beta.0"
   },
   "devDependencies": {
