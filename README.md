@@ -1,10 +1,10 @@
 # Ionic2 Module Template
 
-This is a template for building your own reusable Angular2/Ionic2 module using TypeScript.
+This is a template for building your own reusable Angular2/Ionic2 module using TypeScript. Supports Angular's ngc and Ahead-of-Time compiling out of the box.
 
 ## Developing
 
-(More info soon). Develop your module like any other Angular 2 module. Then, run `npm run build` to build a local copy.
+Develop your module like any other Angular 2 module. Then, run `npm run build` to build a local copy.
 
 When you're ready to publish to npm, run `npm publishPackage`.
 
