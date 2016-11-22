@@ -1,21 +1,21 @@
 {
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
+    "module": "es2015",
+    "target": "es5",
+    "moduleResolution": "node",
+    "sourceMap": true,
     "declaration": true,
-    "emitDecoratorMetadata": true,
+    "noImplicitAny": false,
     "experimentalDecorators": true,
     "lib": ["dom", "es2015"],
-    "module": "es2015",
-    "moduleResolution": "node",
-    "noImplicitAny": false,
     "outDir": "./dist",
-    "target": "es5",
     "types": [
       "node"
     ]
   },
   "exclude": [
     "node_modules",
+    "dist",
     "scripts"
   ],
   "angularCompilerOptions": {
