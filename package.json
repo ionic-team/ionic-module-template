@@ -1,13 +1,13 @@
 {
-  "name": "ionic2-module-template",
-  "version": "0.0.11",
+  "name": "ionic-module-template",
+  "version": "0.0.12",
   "description": "A template for creating reusable module for Angular 2 and Ionic 2",
-  "main": "index.js",
-  "typings": "index.d.ts",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
   "scripts": {
     "ngc": "ngc",
-    "build": "rm -rf aot dist && npm run ngc && node ./scripts/copy-package",
-    "publishPackage": "npm run build && cd dist && npm publish"
+    "build": "rm -rf aot dist && npm run ngc",
+    "publishPackage": "npm run build && npm publish"
   },
   "repository": {
     "type": "git",
@@ -20,17 +20,14 @@
     "url": "https://github.com/driftyco/ionic-module-template/issues"
   },
   "homepage": "https://github.com/driftyco/ionic-module-template#readme",
-  "dependencies": {
-    "@angular/core": "^2.2.1",
-    "@angular/common": "^2.2.1",
-    "@angular/compiler": "^2.2.1",
-    "@angular/compiler-cli": "^2.2.1",
-    "@angular/platform-browser": "^2.2.1",
-    "rxjs": ">=5.0.0-beta.0"
-  },
   "devDependencies": {
-    "@types/chai": "^3.4.34",
-    "@types/node": "^6.0.41",
+    "@angular/common": "^2.1.1",
+    "@angular/compiler": "^2.1.1",
+    "@angular/compiler-cli": "^2.1.1",
+    "@angular/core": "^2.1.1",
+    "@angular/platform-browser": "^2.1.1",
+    "@types/node": "^6.0.49",
+    "rxjs": ">=5.0.0-beta.12",
     "typescript": "^2.0.3"
   }
 }
