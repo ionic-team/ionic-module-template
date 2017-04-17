@@ -22,6 +22,5 @@ export class MyModule {
       ngModule: MyModule,
       providers: [ MyProvider ]
     };
-      
   }
 }
