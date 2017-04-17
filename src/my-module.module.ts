@@ -1,23 +1,27 @@
 import { Observable } from 'rxjs';
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { NgModule, ModuleWithProviders } from '@angular/core';
+import { IonicModule } from 'ionic-angular';
 
 import { MyComponent } from './components/my-component';
 import { MyProvider } from './providers/my-provider';
 
 @NgModule({
   declarations: [
-    MyComponent
+    MyComponent // declare all components that your module uses
   ],
-  providers: [ MyProvider ],
   exports: [
-    MyComponent
+    MyComponent // export the component(s) that you want others to be able to use
   ],
   imports: [
-    BrowserModule
-  ],
-  schemas: [
-    CUSTOM_ELEMENTS_SCHEMA
+    IonicModule // add this if you need to use Ionic components in your module
   ]
 })
-export class MyModule {}
+export class MyModule {
+  static forRoot(): ModuleWithProviders {
+    return {
+      ngModule: MyModule,
+      providers: [ MyProvider ]
+    };
+      
+  }
+}
