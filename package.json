@@ -8,7 +8,7 @@
   "scripts": {
     "ngc": "ngc",
     "build": "rm -rf aot dist && npm run ngc",
-    "prepublish": "npm run build"
+    "publishPackage": "npm run build && npm publish"
   },
   "repository": {
     "type": "git",
