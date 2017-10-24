@@ -20,4 +20,5 @@ export class MyModule {
       providers: [ MyProvider ]
     };
   }
+}
 
