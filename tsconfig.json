@@ -17,6 +17,6 @@
     "scripts"
   ],
   "angularCompilerOptions": {
-    "genDir": "aot"
+    "skipTemplateCodegen": true
   }
 }
